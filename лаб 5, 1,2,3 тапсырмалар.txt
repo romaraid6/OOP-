@@ -1,0 +1,42 @@
+1.
+lst = [1, 2, 3, 4, 5]
+reversed_lst = lst[::-1]
+print("Ishodni poriadok:", lst)
+print("Obratni poriadok:", reversed_lst)
+
+Ishodni poriadok: [1, 2, 3, 4, 5]
+Obratni poriadok: [5, 4, 3, 2, 1]
+
+=== Code Execution Successful ===
+
+2.
+def list_sort(lst):
+    return sorted(lst, key=abs, reverse=True)
+
+numbers = [-10, 3, -7, 2, 0, 5]
+sorted_numbers = list_sort(numbers)
+print("Ishodni:", numbers)
+print("Otsortirovano:", sorted_numbers)
+
+Ishodni: [-10, 3, -7, 2, 0, 5]
+Otsortirovano: [-10, -7, 5, 3, 2, 0]
+
+=== Code Execution Successful ===
+
+3.
+def change(lst):
+    if len(lst) < 2:
+        return lst
+    lst[0], lst[-1] = lst[-1], lst[0]
+    return lst
+
+my_list = [1, 2, 3, 4, 5]
+print("do zameni:", my_list)
+
+changed_list = change(my_list)
+print("Posle zameni:", changed_list)
+
+do zameni: [1, 2, 3, 4, 5]
+Posle zameni: [5, 2, 3, 4, 1]
+
+=== Code Execution Successful ===
